@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #141414;
+    --btn: #000000;
+    --btn-text: #ffffff;
+    --muted: #6b6b6b;
+    --focus: #e4694b;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --text: #f2f2f2; --btn: #f2f2f2; --btn-text: #101010; --muted: #a0a0a0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --text: #f2f2f2; --btn: #f2f2f2; --btn-text: #101010; --muted: #a0a0a0;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 56px 20px 64px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 22px;
+  }
+  .links { display: flex; flex-direction: column; gap: 16px; }
+  .links a {
+    display: block;
+    padding: 17px 20px;
+    border-radius: 999px;
+    background: var(--btn);
+    color: var(--btn-text);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform .15s ease;
+  }
+  .links a:hover { transform: scale(1.02); }
+  .links a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  p.note { margin: 36px 0 0; font-size: .78rem; color: var(--muted); line-height: 1.5; }
+  @media (prefers-reduced-motion: reduce) { .links a { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Links ↓</h1>
+  <nav class="links" aria-label="Links">
+    <!-- To add a tool: copy one line below, change the link and the name -->
+    <a href="https://imported-coast-5de.notion.site/LIVE-CLIPPER-TOOL-41d1ba304bb880f4a1d7eb1e33d7173c" target="_blank" rel="noopener">Live Clipper Tool</a>
+  </nav>
+  <p class="note">Only clip streams you have permission to clip, and credit the streamer.</p>
+</main>
+</body>
+</html>
